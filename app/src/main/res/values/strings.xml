@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Woops</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="logout">Log out</string>
+    <string name="home">Home</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_patient">New Patient</string>
+    <string name="new_family">New Family</string>
+    <string name="voice">Voice Input</string>
+    <string name="update_stock">Update Stock</string>
+    <string name="name_of_patient">Name of the patient</string>
+    <string name="other_name">Other name</string>
+    <string name="first_name">First name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="phone_format">eg. 07xx xxx xxx</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="gender">Gender of patient</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="add_patient">Add Patient</string>
+    <string name="mother_details">Mother Details</string>
+    <string name="mother_name">Mother\'s Full Name</string>
+    <string name="id_number">ID Number</string>
+    <string name="father_name">Father\'s Full Name</string>
+    <string name="father_details">Father\'s Details</string>
+    <string name="phone_number_phone_format">Phone eg. 07xx xxx xxx</string>
+    <string name="residence">Residence</string>
+    <string name="where_you_live">Place of residence</string>
+    <string name="add_family">Add Family</string>
+    <string name="search_hint">Patient Mobile Number, Name or ID</string>
+    <string name="search_patient">Search</string>
+    <string name="patient_search">Search Patient</string>
+</resources>

@@ -25,7 +25,9 @@
         android:layout_marginTop="5dp"
         android:background="@drawable/edit_text_bg"
         android:hint="@string/mother_name"
-        android:padding="10dp" />
+        android:imeOptions="actionNext"
+        android:padding="10dp"
+        android:singleLine="true" />
     <!--mother id no.-->
     <EditText
         android:id="@+id/m_id"
@@ -36,7 +38,9 @@
         android:background="@drawable/edit_text_bg"
         android:digits="01234567890"
         android:hint="@string/id_number"
-        android:padding="10dp" />
+        android:imeOptions="actionNext"
+        android:padding="10dp"
+        android:singleLine="true" />
     <!--phone number-->
 
     <EditText
@@ -48,8 +52,10 @@
         android:background="@drawable/edit_text_bg"
         android:digits="01234567890"
         android:hint="@string/phone_number_phone_format"
+        android:imeOptions="actionNext"
         android:inputType="phone"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:singleLine="true" />
 
 
     <!--father details-->
@@ -72,7 +78,9 @@
         android:layout_marginTop="5dp"
         android:background="@drawable/edit_text_bg"
         android:hint="@string/father_name"
-        android:padding="10dp" />
+        android:imeOptions="actionNext"
+        android:padding="10dp"
+        android:singleLine="true" />
     <!--father id no.-->
     <EditText
         android:id="@+id/f_id"
@@ -83,7 +91,9 @@
         android:background="@drawable/edit_text_bg"
         android:digits="01234567890"
         android:hint="@string/id_number"
-        android:padding="10dp" />
+        android:imeOptions="actionNext"
+        android:padding="10dp"
+        android:singleLine="true" />
 
     <!--phone number-->
     <EditText
@@ -95,14 +105,18 @@
         android:background="@drawable/edit_text_bg"
         android:digits="01234567890"
         android:hint="@string/phone_number_phone_format"
+        android:imeOptions="actionNext"
         android:inputType="phone"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:singleLine="true" />
     <!--Residence-->
     <com.ctrlplusz.anytextview.AnyTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="5dp"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
         android:text="@string/residence"
         android:textColor="@color/grey"
         android:textSize="15sp"
@@ -117,8 +131,10 @@
         android:layout_marginTop="5dp"
         android:background="@drawable/edit_text_bg"
         android:hint="@string/where_you_live"
+        android:imeOptions="actionDone"
         android:inputType="phone"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:singleLine="true" />
 
     <Button
         android:id="@+id/done"

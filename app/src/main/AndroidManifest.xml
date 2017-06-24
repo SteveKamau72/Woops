@@ -20,7 +20,11 @@
         <activity
             android:name=".activities.AddPatient"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".activities.AdministerVaccine"></activity>
+        <activity android:name=".activities.AdministerVaccine" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="stateHidden" />
     </application>
 
 </manifest>

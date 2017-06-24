@@ -36,6 +36,8 @@
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:hint="@string/search_hint"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
                 android:textColor="@color/black"
                 android:textColorHint="@color/grey" />
         </android.support.design.widget.TextInputLayout>

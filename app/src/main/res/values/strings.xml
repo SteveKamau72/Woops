@@ -33,4 +33,7 @@
     <string name="search_hint">Patient Mobile Number, Name or ID</string>
     <string name="search_patient">Search</string>
     <string name="patient_search">Search Patient</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
 </resources>

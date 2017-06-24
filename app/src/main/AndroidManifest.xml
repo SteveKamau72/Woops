@@ -10,13 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         tools:replace="android:icon">
-        <activity android:name=".activities.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".activities.MainActivity" />
         <activity
             android:name=".activities.AddPatient"
             android:windowSoftInputMode="stateHidden" />
@@ -24,7 +18,15 @@
         <activity
             android:name=".activities.LoginActivity"
             android:theme="@style/LoginTheme"
-            android:windowSoftInputMode="stateHidden" />
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.PatientDetails" />
+        <activity android:name=".activities.InventoryActivity"></activity>
     </application>
 
 </manifest>

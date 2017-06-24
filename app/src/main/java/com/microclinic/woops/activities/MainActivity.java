@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity implements NavigationDrawerC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Intent i = new Intent(getApplicationContext(), LoginActivity.class);
-        startActivity(i);
-        finish();
+//        Intent i = new Intent(getApplicationContext(), LoginActivity.class);
+//        startActivity(i);
+//        finish();
         setUpToolBar(getString(R.string.app_name));
         setViews();
     }

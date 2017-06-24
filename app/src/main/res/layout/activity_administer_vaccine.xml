@@ -17,6 +17,7 @@
 
 
     <LinearLayout
+        android:id="@+id/search_box"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar"
@@ -26,14 +27,14 @@
         <!--search-->
         <android.support.design.widget.TextInputLayout
             android:id="@+id/search_input_layout"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="10dp">
+            android:layout_margin="10dp">
 
             <EditText
                 android:id="@+id/search"
-                android:layout_width="250dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/search_hint"
                 android:imeOptions="actionDone"
@@ -44,10 +45,10 @@
 
         <Button
             android:id="@+id/done"
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/style_button_shape"
             android:text="@string/search_patient"
@@ -56,4 +57,84 @@
             android:textSize="15sp"
             android:textStyle="bold" />
     </LinearLayout>
+    <!--dummy search data-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_box"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_user" />
+
+            <com.ctrlplusz.anytextview.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="#0000010"
+                android:textColor="@color/darkAccent"
+                android:textSize="18sp"
+                app:typeface="Nirmala.ttf" />
+
+            <com.ctrlplusz.anytextview.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text=" - Jackson"
+                android:textColor="@color/darkAccent"
+                android:textSize="18sp"
+                app:typeface="Nirmala.ttf" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_user" />
+
+            <com.ctrlplusz.anytextview.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="#0000189"
+                android:textColor="@color/darkAccent"
+                android:textSize="18sp"
+                app:typeface="Nirmala.ttf" />
+
+            <com.ctrlplusz.anytextview.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text=" - Jackson K."
+                android:textColor="@color/darkAccent"
+                android:textSize="18sp"
+                app:typeface="Nirmala.ttf" />
+
+        </LinearLayout>
+    </LinearLayout>
+
 </RelativeLayout>

@@ -1,6 +1,5 @@
 package com.microclinic.woops.activities;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -10,16 +9,15 @@ import com.microclinic.woops.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
-public class AdministerVaccine extends AppCompatActivity {
+public class PatientDetails extends AppCompatActivity {
     @BindView(R.id.toolbar)
     Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_administer_vaccine);
+        setContentView(R.layout.activity_patient_details);
         ButterKnife.bind(this);
         setViews();
     }
@@ -28,17 +26,7 @@ public class AdministerVaccine extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-        toolbar.setTitle(getString(R.string.patient_search));
-    }
-
-    @OnClick(R.id.row1)
-    void firstRow() {
-        startActivity(new Intent(getApplicationContext(), PatientDetails.class));
-    }
-
-    @OnClick(R.id.row2)
-    void secondRow() {
-        startActivity(new Intent(getApplicationContext(), PatientDetails.class));
+        toolbar.setTitle("Patient - Jackson");
     }
 
     @Override
@@ -57,4 +45,3 @@ public class AdministerVaccine extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
-

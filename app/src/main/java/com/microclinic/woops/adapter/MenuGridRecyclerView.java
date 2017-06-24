@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.microclinic.woops.R;
 import com.microclinic.woops.activities.AddPatient;
 import com.microclinic.woops.activities.AdministerVaccine;
+import com.microclinic.woops.activities.InventoryActivity;
 import com.microclinic.woops.models.MenuItemsObject;
 
 import java.util.List;
@@ -80,6 +81,9 @@ public class MenuGridRecyclerView extends RecyclerView.Adapter<MenuGridRecyclerV
                         mContext.startActivity(i);
                         break;
                     case 2:
+                        i = new Intent(mContext, InventoryActivity.class);
+                        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        mContext.startActivity(i);
                         break;
                     case 3:
                         break;

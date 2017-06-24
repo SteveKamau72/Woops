@@ -12,8 +12,8 @@
         <ImageView
             android:layout_width="@dimen/navigation_drawer_width"
             android:layout_height="100dp"
-            android:background="@color/darkAccent"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerCrop"
+            android:src="@drawable/header_bg_2" />
 
         <ImageView
             android:layout_width="@dimen/navigation_drawer_width"
@@ -38,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="14dp"
-            android:layout_marginTop="55dp"
+            android:layout_marginTop="45dp"
             android:layout_toRightOf="@+id/prof_image"
             android:orientation="vertical"
             android:visibility="visible">
@@ -49,10 +49,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:background="?android:attr/selectableItemBackground"
+                android:shadowColor="@color/darkAccent"
+                android:shadowRadius="2"
                 android:text="Steve Kamau"
                 android:textColor="@color/white"
-                android:textSize="13sp"
-                app:typeface="Centurygothic.ttf" />
+                android:textSize="15sp"
+                app:typeface="NirmalaB.ttf" />
             <!--email-->
             <com.ctrlplusz.anytextview.AnyTextView
                 android:id="@+id/email"
@@ -61,10 +63,12 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginTop="5dp"
                 android:background="?android:attr/selectableItemBackground"
+                android:shadowColor="@color/darkAccent"
+                android:shadowRadius="1"
                 android:text="steve72@gmail.com"
                 android:textColor="@color/white"
-                android:textSize="11sp"
-                app:typeface="Centurygothic.ttf" />
+                android:textSize="13sp"
+                app:typeface="NirmalaB.ttf" />
         </LinearLayout>
 
         <!--menu-->
